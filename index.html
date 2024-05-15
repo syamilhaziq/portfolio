@@ -16,13 +16,15 @@
     <div class="container">
       <nav>
         <img src="images/syamil.haziq.png" class="logo">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Portfolio</a></li>
-          <li><a href="#">Contact</a></li>
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
         </ul>
+        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
       </nav>
       <div class="header-text">
         <p>Aspiring Web Developer@Software Engineer</p>
@@ -147,12 +149,13 @@
           <a href="images/my-cv.jpg" download class="btn btn2">Download CV</a>
         </div>
         <div class="contact-right">
-          <form>
-            <input type="text" name="name" placeholder="Your Name" required>
-            <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" rows="6" placeholder="Your Message"></textarea>
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
             <button type="submit" class="btn btn2">Submit</button>
           </form>
+          <span id="msg"></span>
         </div>
       </div>
     </div>
